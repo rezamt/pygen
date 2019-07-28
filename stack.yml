@@ -1,0 +1,16 @@
+provider:
+  type: azure
+  subscription_id: "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  client_id: "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  client_secret: "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  tenant_id: "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# These resources need to be developed to generate file azure-vm.tf under example
+resources:
+  vms:
+    - name: "myVM01"
+      location: "eastus"
+      vm_size: "Standard_DS1_v2"
+    - name: "myVM02"
+      location: "westus"
+      vm_size: "Standard_DS1_v2"
